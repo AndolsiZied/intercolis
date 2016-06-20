@@ -1,0 +1,12 @@
+version: '2'
+services:
+    intercolis-postgresql:
+        container_name: intercolis-postgresql
+        image: postgres:9.5.2
+        # volumes:
+        #     - ~/volumes/jhipster/intercolis/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=intercolis
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
